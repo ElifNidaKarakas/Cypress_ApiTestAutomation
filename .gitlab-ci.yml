@@ -1,0 +1,9 @@
+stages:
+  - test
+
+cypress-test:
+  stage: test
+  image: cypress/browsers:latest
+  script:
+    - npm install
+    - npx cypress run --browser chrome --record --key 146185e5-4b96-4af3-8a9f-77b139041695
